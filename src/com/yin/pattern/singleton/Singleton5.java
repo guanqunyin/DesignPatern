@@ -49,7 +49,7 @@ public class Singleton5 implements Cloneable, Serializable{
         Object singleton5Cloned = singleton5.clone();
         System.out.println(singleton5);
         System.out.println(singleton5Cloned);
-        //TODO 通过序列化和反序列化破坏单例模式
+        // 通过序列化和反序列化破坏单例模式
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         try(ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream("tempfile"))){
             outputStream.writeObject(singleton5);
