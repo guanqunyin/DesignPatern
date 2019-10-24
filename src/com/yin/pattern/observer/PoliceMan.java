@@ -10,8 +10,12 @@ public abstract class PoliceMan {
 
     protected void notifyPoliceMan() {
         System.out.println(name + "被通知了");
-        actionAfterNotified();
+        EscapeFromPrisonEvent escapeFromPrisonEvent = new EscapeFromPrisonEvent();
+        escapeFromPrisonEvent.location = "一号房间";
+        escapeFromPrisonEvent.timestamp = System.currentTimeMillis();
+        System.out.println("犯人在"+escapeFromPrisonEvent.location+ "时间："+escapeFromPrisonEvent.timestamp);
+        actionAfterNotified(escapeFromPrisonEvent);
     }
 
-    abstract void actionAfterNotified();
+    abstract void actionAfterNotified(EscapeFromPrisonEvent escapeFromPrisonEvent);
 }

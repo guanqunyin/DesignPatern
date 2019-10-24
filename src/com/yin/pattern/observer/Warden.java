@@ -8,7 +8,7 @@ public class Warden extends PoliceMan{
     }
 
     @Override
-    void actionAfterNotified() {
+    void actionAfterNotified(EscapeFromPrisonEvent escapeFromPrisonEvent) {
         System.out.println("监狱长: " + name + "接到了通知并且准备赶往监狱");
     }
 }
