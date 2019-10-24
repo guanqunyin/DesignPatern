@@ -8,7 +8,7 @@ import java.nio.Buffer;
 public class Main {
 
     public static void main(String[] args)  {
-        CoatWoman coatWoman = new CoatWoman(new LipstickWoman(new LongHairWoman()));
+        CoatWoman coatWoman = new CoatWoman(new LipstickWoman(new LongHairWoman(new SimpleWomanConcrete())));
         coatWoman.print();
 
 

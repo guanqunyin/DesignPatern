@@ -13,8 +13,7 @@ class LongHairWoman extends SimpleWoman{
     }
 
     public void print() {
-        if (simpleWoman != null)
-            simpleWoman.print();
+        simpleWoman.print();
         System.out.println("长头发");
     }
 
