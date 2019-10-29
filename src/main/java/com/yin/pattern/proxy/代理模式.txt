@@ -1,0 +1,5 @@
+代理模式：：instrument？？？？
+1.  自己手写一个静态代理
+2. 调用JDK自带的动态代理
+3. TODO 调用cglib的动态代理
+4. TODO 调用一下spring的AOP

@@ -1,4 +1,4 @@
-package main.java.com.yin.pattern.proxy.cglib;
+package com.yin.pattern.proxy.cglib;
 
 import org.springframework.cglib.proxy.Enhancer;
 import org.springframework.cglib.proxy.MethodProxy;
@@ -29,7 +29,7 @@ class TankTimeMethodInterceptor implements org.springframework.cglib.proxy.Metho
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         long before = System.currentTimeMillis();
         System.out.println("before: " + before);
-        method.invoke(o, objects);
+        methodProxy.invokeSuper(o, objects);
         long after = System.currentTimeMillis();
         System.out.println("after: " + after);
         return null;
