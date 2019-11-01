@@ -1,11 +1,13 @@
 package com.yin.pattern.visitor;
 
+//内部的数据结构，被访问者
 public class Computer {
 
     ComputerPart cpu = new CPU();
     ComputerPart memory = new Memory();
     ComputerPart board = new Board();
 
+    //定义了开放访问的固定部分
     public void accept(Visitor visitor) {
         this.cpu.accept(visitor);
         this.memory.accept(visitor);
@@ -22,6 +24,7 @@ public class Computer {
 
 }
 
+//内部数据结构的抽象类
 abstract class ComputerPart{
 
     abstract void accept(Visitor visitor);
@@ -30,6 +33,7 @@ abstract class ComputerPart{
 
 }
 
+//内部数据结构的实现类
 class CPU extends ComputerPart {
 
     @Override
@@ -43,6 +47,7 @@ class CPU extends ComputerPart {
     }
 }
 
+//内部数据结构的实现类
 class Memory extends ComputerPart {
 
     @Override
@@ -56,6 +61,7 @@ class Memory extends ComputerPart {
     }
 }
 
+//内部数据结构的实现类
 class Board extends ComputerPart {
 
     @Override
@@ -69,6 +75,7 @@ class Board extends ComputerPart {
     }
 }
 
+//访问者的接口
 interface Visitor{
 
     void visitCPU(CPU cpu);
@@ -78,6 +85,8 @@ interface Visitor{
     void visitMemory(Memory memory);
 }
 
+
+//访问者的实现类
 class StudentVisitor implements Visitor{
 
     double price;

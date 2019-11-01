@@ -1,11 +1,13 @@
 package com.yin.pattern.proxy.cglib;
 
-import org.springframework.cglib.proxy.Enhancer;
-import org.springframework.cglib.proxy.MethodProxy;
-
 import java.lang.reflect.Method;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
+
+import org.springframework.cglib.proxy.Enhancer;
+import org.springframework.cglib.proxy.MethodProxy;
+
+
 
 /**
  * Created by Administrator on 2019/10/28.

@@ -11,6 +11,7 @@ import static org.objectweb.asm.Opcodes.ASM4;
 
 /**
  * Created by Administrator on 2019/10/30.
+ * 通过继承ClassVisitor重写了它的print方法，可以让我们更直观的看到其内部数据结构
  */
 public class ClassPrinter extends ClassVisitor {
     public ClassPrinter() {
@@ -24,7 +25,7 @@ public class ClassPrinter extends ClassVisitor {
 
     @Override
     public FieldVisitor visitField(int access, String name, String descriptor, String signature, Object value) {
-        System.out.println("    " + name);
+        System.out.println("    "+ access + "    " + descriptor + "   " + name);
         return null;
     }
 
@@ -40,9 +41,13 @@ public class ClassPrinter extends ClassVisitor {
     }
 
     public static void main(String[] args) throws IOException {
+        //访问者
         ClassVisitor classVisitor = new ClassPrinter();
 //        ClassReader classReader = new ClassReader("java.lang.String");D:\IdeaWorkSpace\DesignPattern\src\main\java\
+        //被访问者
         ClassReader classReader = new ClassReader(ClassPrinter.class.getResourceAsStream("T1.class"));
+
+        //内部会一次调用访问者声明的方法
         classReader.accept(classVisitor, 0);
     }
 }
