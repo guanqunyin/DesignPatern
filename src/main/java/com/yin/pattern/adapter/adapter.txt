@@ -1,0 +1,10 @@
+包装器或者转换器模式适配器模式等
+如电压转接头
+java.io
+jdbc-odbc bridge(不是桥接模式)
+ASM的transformer
+
+误区：
+常见的adapter它不是adapter，啥也不是
+WindowAdapter
+KeyAdapter

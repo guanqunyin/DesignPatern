@@ -55,11 +55,32 @@ public class Person {
             this.roomNo =roomNo;
             this.street =street;
         }
+
+        @Override
+        public String toString() {
+            return "Location{" +
+                    "street='" + street + '\'' +
+                    ", roomNo='" + roomNo + '\'' +
+                    '}';
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                ", weight=" + weight +
+                ", score=" + score +
+                ", location=" + location +
+                '}';
     }
 
     public static void main(String[] args) {
         Person p = new Person.PersonBuilder().basicInfo(1, "zhangsan", 18)
                 .score(20).weight(200).loc("changsha", "111").build();
+        System.out.println(p);
     }
 
 
