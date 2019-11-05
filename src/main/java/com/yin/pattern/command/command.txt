@@ -1,0 +1,5 @@
+别名： Action/Transaction
+该模式可与其他模式组合
+TODO command + composite： 宏命令（一种由很多命令组成的命令）
+TODO command + chainofresponsibility : 多次undo
+TODO command + memento:是transaction回滚
