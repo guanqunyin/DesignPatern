@@ -1,0 +1,7 @@
+java中的原型模式：
+1.java自带的
+2.实现该模式需要实现标记型接口Cloneable
+3.一般会重写clone方法
+        如果只是重写clone方法，不识闲Cloneable接口，调用时会报异常(java.lang.CloneNotSupportedException)
+4. 一般用于一个对象的属性已经确定，需要产生很多相同对象的时候
+5. 需要区分深克隆和潜克隆
