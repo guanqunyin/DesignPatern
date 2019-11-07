@@ -1,0 +1,4 @@
+模板方法：也叫做钩子函数，回调函数
+定义一个抽象类，并部分实现并且调用了未来子类可能会实现的方法，留下一部分给子类自己实现
+如AQS（AbstractQueuedSynchronizer）
+ASM的ClassVisitor
