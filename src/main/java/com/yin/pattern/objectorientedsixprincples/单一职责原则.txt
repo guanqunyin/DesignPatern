@@ -1,0 +1,7 @@
+Single Responsibility principle
+
+一个类别太大，别太累，，负责单一的职责
+Person
+PersonManger
+高内聚，低耦合
+（把属于自己的功能都放在自己这个类里面，尽量不要跟其他的类耦合在一起）

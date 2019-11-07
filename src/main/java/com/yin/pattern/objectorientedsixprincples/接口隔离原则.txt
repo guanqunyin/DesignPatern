@@ -1,0 +1,5 @@
+Interface segregation principle
+每一个接口应该承担独立的角色，不干不该自己干的事儿
+    Flyable Runnale 不应该合二为一
+    避免子类实现不需要实现的方法
+    需要对客户提供接口的时候，提供最小的接口

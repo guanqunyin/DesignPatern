@@ -1,0 +1,3 @@
+liscov subsitution principle
+
+所有使用父类的地方，必须能够透明的使用自类对象

@@ -1,0 +1,19 @@
+指导思想
+可维护性 maintainability
+    修改功能，需要改动的地方越少，可维护性就越好
+可复用性 reusability
+    代码可以贝以后重复使用
+    写出自己总结的类库
+可扩展性 extensibility/scalability
+    添加功能无需修改原来代码
+灵活性  flexibility/mobility/adaptability
+    代码借口可以灵活调用
+
+
+总结：
+OCP：对扩展开放，对修改关闭，总纲
+SRP： 类的职责单一
+LSP： 子类可以透明的替换父类
+DIP： 面向接口编程
+ISP： 接口的职责要单一
+LOD： 降低耦合

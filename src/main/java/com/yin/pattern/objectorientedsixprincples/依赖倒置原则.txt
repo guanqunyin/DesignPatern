@@ -1,0 +1,3 @@
+dependency inverse principle
+依赖抽象，而不是依赖具体
+面向抽象编程，面向接口编程
