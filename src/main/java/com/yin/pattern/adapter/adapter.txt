@@ -1,3 +1,5 @@
+将一个客户的结构转换成客户希望的另外一个接口，
+Adapter模式使得原本由于接口不兼容而无法一起工作的那些类可以一起工作
 包装器或者转换器模式适配器模式等
 如电压转接头
 java.io
@@ -8,3 +10,5 @@ ASM的transformer
 常见的adapter它不是adapter，啥也不是
 WindowAdapter
 KeyAdapter
+
+TODO 自己实现一个adapter模式
