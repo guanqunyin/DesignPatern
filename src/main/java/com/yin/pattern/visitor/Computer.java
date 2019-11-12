@@ -3,6 +3,7 @@ package com.yin.pattern.visitor;
 //内部的数据结构，被访问者
 public class Computer {
 
+    //固定的数据结构，基本不变，但根据不同的人有不同的内部实现，想要的话就可以加一个进去
     ComputerPart cpu = new CPU();
     ComputerPart memory = new Memory();
     ComputerPart board = new Board();

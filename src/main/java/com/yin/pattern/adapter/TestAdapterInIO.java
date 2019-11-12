@@ -10,6 +10,7 @@ public class TestAdapterInIO {
     public static void main(String[] args) throws IOException {
         FileInputStream fileInputStream = new FileInputStream("c://test.txt");
 
+        //这个inputstreanReader就是一个包装器
         InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
 
         BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
