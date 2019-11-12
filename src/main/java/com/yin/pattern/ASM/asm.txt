@@ -1,4 +1,4 @@
 ASM
-及时java里面的汇编，可以读class文件，也可以动态创建class文件
+即是java里面的汇编，可以读class文件，也可以动态创建class文件
 
 jclasslib，这个插件可以看到二进制码
