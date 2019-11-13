@@ -1,4 +1,4 @@
-java中的原型模式：
+java中的原型模式：用原型实例指定创建对象的种类，并通过拷贝这个原型来创建新的对象实例
 1.java自带的
 2.实现该模式需要实现标记型接口Cloneable
 3.一般会重写clone方法
@@ -6,4 +6,7 @@ java中的原型模式：
 4. 一般用于一个对象的属性已经确定，需要产生很多相同对象的时候
 5. 需要区分深克隆和潜克隆
 
-//TODO 是否有重写String的clone方法，其中包括new String()赋值的话需要重写和new StringBuilder()以及直接赋值;
+ 是否有重写String的clone方法？
+     new String()赋值的话         需要重写;
+     new StringBuilder()         需要重写;
+     直接赋值                     不需要重写;
